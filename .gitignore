@@ -16,3 +16,7 @@ Thumbs.db
 # 编辑器
 .vscode/
 .idea/
+
+# 调试临时文件
+runs.json
+jobs.json
