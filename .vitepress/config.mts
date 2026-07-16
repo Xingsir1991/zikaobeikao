@@ -13,9 +13,8 @@ export default defineConfig({
   title: '备考笔记',
   description: '大学语文与思政公共课备考资料',
 
-  // 暂不部署到线上，使用默认 base。
-  // 后续部署到 GitHub Pages 时，改成 `base: '/仓库名/'`（注意首尾斜杠）
-  base: '/',
+  // 部署到 GitHub Pages（用户名.github.io/仓库名/），base 必须为 '/仓库名/'
+  base: '/zikaobeikao/',
 
   // URL 去掉 .html 后缀，更干净
   cleanUrls: true,
@@ -88,7 +87,7 @@ export default defineConfig({
     },
 
     socialLinks: [
-      { icon: 'github', link: 'https://github.com/' },
+      { icon: 'github', link: 'https://github.com/Xingsir1991/zikaobeikao' },
     ],
   },
 })
