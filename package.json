@@ -1,0 +1,16 @@
+{
+  "name": "beikao-notes",
+  "version": "1.0.0",
+  "description": "大学语文与思政公共课备考笔记（VitePress）",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev",
+    "build": "vitepress build",
+    "preview": "vitepress preview"
+  },
+  "devDependencies": {
+    "vitepress": "^1.6.3",
+    "vue": "^3.5.13"
+  }
+}
