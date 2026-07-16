@@ -1,12 +1,13 @@
 import { defineConfig } from 'vitepress'
 
-// 五个科目的统一配置，方便 sidebar / nav 复用
+// 六个公共课科目的统一配置，按课程代码升序排列（专本一起考）
 const subjects = [
-  { key: 'chinese',     dir: '/chinese/',     title: '大学语文',                    icon: '📚', desc: '古代文学、现代文阅读、写作' },
-  { key: 'sixiu',       dir: '/sixiu/',       title: '15042 思想道德与法治',         icon: '🔴', desc: '理想信念、道德观、法治观' },
-  { key: 'mayuan',      dir: '/mayuan/',      title: '马原（马克思主义基本原理）',   icon: '🟡', desc: '哲学、政经、科社' },
-  { key: 'maozhongte',  dir: '/maozhongte/',  title: '毛中特',                       icon: '🔵', desc: '毛泽东思想与中国特色社会主义' },
-  { key: 'shigang',     dir: '/shigang/',     title: '史纲（中国近现代史纲要）',     icon: '🟢', desc: '近代史脉络、重大事件' },
+  { key: 'chinese',     dir: '/chinese/',     title: '04729 大学语文',                       icon: '📚', desc: '古代文学、现代文阅读、写作' },
+  { key: 'xigai',       dir: '/xigai/',       title: '15040 习近平新时代中国特色社会主义思想概论', icon: '🟣', desc: '新时代党的创新理论（专本共考）' },
+  { key: 'maozhongte',  dir: '/maozhongte/',  title: '15041 毛泽东思想和中国特色社会主义理论体系概论', icon: '🔵', desc: '马克思主义中国化时代化理论成果（专科）' },
+  { key: 'sixiu',       dir: '/sixiu/',       title: '15042 思想道德与法治',                 icon: '🔴', desc: '理想信念、道德观、法治观（专科）' },
+  { key: 'shigang',     dir: '/shigang/',     title: '15043 中国近现代史纲要',               icon: '🟢', desc: '近代史脉络、重大事件（本科）' },
+  { key: 'mayuan',      dir: '/mayuan/',      title: '15044 马克思主义基本原理',             icon: '🟡', desc: '哲学、政经、科社（本科）' },
 ]
 
 export default defineConfig({
@@ -41,6 +42,7 @@ export default defineConfig({
     // 侧边栏：每个科目目录下独立展示该科目的内容
     sidebar: {
       '/chinese/':    chineseSidebar(),
+      '/xigai/':      sidebarGroup('xigai'),
       '/sixiu/':      sidebarGroup('sixiu'),
       '/mayuan/':     sidebarGroup('mayuan'),
       '/maozhongte/': sidebarGroup('maozhongte'),
@@ -98,14 +100,14 @@ function sidebarGroup(key: string) {
   const s = subjects.find(x => x.key === key)!
   const items: any[] = [{ text: '首页', link: `${s.dir}` }]
 
-  // 思修 15042 六章目录
+  // 思修 15042 六章目录（link 必须与 sixiu/ 下实际文件夹名逐字一致）
   if (key === 'sixiu') {
     items.push(
-      { text: '绪论 担当复兴大任 成就时代新人', link: '/sixiu/绪论-担当复兴大任/' },
+      { text: '绪论 担当复兴大任 成就时代新人', link: '/sixiu/绪论-担当复兴大任成就时代新人/' },
       { text: '第一章 领悟人生真谛 把握人生方向', link: '/sixiu/第一章-领悟人生真谛/' },
-      { text: '第二章 追求远大理想 坚定崇高信念', link: '/sixiu/第二章-理想信念/' },
-      { text: '第三章 弘扬中国精神', link: '/sixiu/第三章-中国精神/' },
-      { text: '第四章 践行社会主义核心价值观', link: '/sixiu/第四章-社会主义核心价值观/' },
+      { text: '第二章 追求远大理想 坚定崇高信念', link: '/sixiu/第二章-追求远大理想坚定崇高信念/' },
+      { text: '第三章 继承优良传统 弘扬中国精神', link: '/sixiu/第三章-继承优良传统弘扬中国精神/' },
+      { text: '第四章 明确价值要求 践行价值准则', link: '/sixiu/第四章-明确价值要求践行价值准则/' },
       { text: '第五章 遵守道德规范 锤炼道德品格', link: '/sixiu/第五章-道德观/' },
       { text: '第六章 学习法治思想 提升法治素养', link: '/sixiu/第六章-法治观/' },
     )

@@ -20,3 +20,7 @@ Thumbs.db
 # 调试临时文件
 runs.json
 jobs.json
+
+# PDF 教材原文件与拆分产物（体积过大，不入库）
+*.pdf
+pdf-parts/
