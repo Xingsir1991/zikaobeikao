@@ -1,13 +1,14 @@
 import { defineConfig } from 'vitepress'
 
 // 六个公共课科目的统一配置，按课程代码升序排列（专本一起考）
+// title 用简称（导航/侧边栏），全称写在各科目 index.md 的 H1 里
 const subjects = [
-  { key: 'chinese',     dir: '/chinese/',     title: '04729 大学语文',                       icon: '📚', desc: '古代文学、现代文阅读、写作' },
-  { key: 'xigai',       dir: '/xigai/',       title: '15040 习近平新时代中国特色社会主义思想概论', icon: '🟣', desc: '新时代党的创新理论（专本共考）' },
-  { key: 'maozhongte',  dir: '/maozhongte/',  title: '15041 毛泽东思想和中国特色社会主义理论体系概论', icon: '🔵', desc: '马克思主义中国化时代化理论成果（专科）' },
-  { key: 'sixiu',       dir: '/sixiu/',       title: '15042 思想道德与法治',                 icon: '🔴', desc: '理想信念、道德观、法治观（专科）' },
-  { key: 'shigang',     dir: '/shigang/',     title: '15043 中国近现代史纲要',               icon: '🟢', desc: '近代史脉络、重大事件（本科）' },
-  { key: 'mayuan',      dir: '/mayuan/',      title: '15044 马克思主义基本原理',             icon: '🟡', desc: '哲学、政经、科社（本科）' },
+  { key: 'chinese',     dir: '/chinese/',     title: '04729 大学语文',  icon: '📚', desc: '古代文学、现代文阅读、写作' },
+  { key: 'xigai',       dir: '/xigai/',       title: '15040 习概',      icon: '🟣', desc: '习近平新时代中国特色社会主义思想概论（专本共考）' },
+  { key: 'maozhongte',  dir: '/maozhongte/',  title: '15041 毛中特',    icon: '🔵', desc: '毛泽东思想和中国特色社会主义理论体系概论（专科）' },
+  { key: 'sixiu',       dir: '/sixiu/',       title: '15042 思修',      icon: '🔴', desc: '思想道德与法治（专科）' },
+  { key: 'shigang',     dir: '/shigang/',     title: '15043 史纲',      icon: '🟢', desc: '中国近现代史纲要（本科）' },
+  { key: 'mayuan',      dir: '/mayuan/',      title: '15044 马原',      icon: '🟡', desc: '马克思主义基本原理（本科）' },
 ]
 
 export default defineConfig({
