@@ -46,7 +46,7 @@ export default defineConfig({
       '/xigai/':      xigaiSidebar(),
       '/sixiu/':      sidebarGroup('sixiu'),
       '/mayuan/':     sidebarGroup('mayuan'),
-      '/maozhongte/': sidebarGroup('maozhongte'),
+      '/maozhongte/': maozhongteSidebar(),
       '/shigang/':    shigangSidebar(),
     },
 
@@ -146,6 +146,33 @@ function shigangSidebar() {
         },
 
         // 第 2-10 章待建（笔记完成后逐步补入）
+      ],
+    },
+  ]
+}
+
+// 毛中特（15041）按"章→节"两层嵌套的侧边栏
+function maozhongteSidebar() {
+  return [
+    {
+      text: '🔵 15041 毛中特',
+      collapsed: false,
+      items: [
+        { text: '首页', link: '/maozhongte/' },
+
+        // 第一章（已建笔记）
+        {
+          text: '第一章 毛泽东思想及其历史地位',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/maozhongte/ch01/' },
+            { text: '第一节 毛泽东思想的形成和发展', link: '/maozhongte/ch01/第一节-毛泽东思想的形成和发展' },
+            { text: '第二节 毛泽东思想的主要内容和活的灵魂', link: '/maozhongte/ch01/第二节-毛泽东思想的主要内容和活的灵魂' },
+            { text: '第三节 毛泽东思想的历史地位', link: '/maozhongte/ch01/第三节-毛泽东思想的历史地位' },
+          ],
+        },
+
+        // 第 2-8 章待建（笔记完成后逐步补入）
       ],
     },
   ]

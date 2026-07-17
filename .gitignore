@@ -28,3 +28,4 @@ pdf-parts/
 # OCR 中间产物（教材扫描识别文本，不入库）
 xigai/ocr-source/
 shigang/ocr-source/
+maozhongte/ocr-source/
