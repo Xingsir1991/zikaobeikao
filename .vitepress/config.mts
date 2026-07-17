@@ -196,7 +196,18 @@ function maozhongteSidebar() {
           ],
         },
 
-        // 第 4-8 章待建（笔记完成后逐步补入）
+        // 第四章（已建笔记）
+        {
+          text: '第四章 社会主义建设道路初步探索的理论成果',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/maozhongte/ch04/' },
+            { text: '第一节 初步探索的重要理论成果', link: '/maozhongte/ch04/第一节-初步探索的重要理论成果' },
+            { text: '第二节 初步探索的意义和经验教训', link: '/maozhongte/ch04/第二节-初步探索的意义和经验教训' },
+          ],
+        },
+
+        // 第 5-8 章待建（笔记完成后逐步补入）
       ],
     },
   ]
