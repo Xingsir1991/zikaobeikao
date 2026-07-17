@@ -172,7 +172,19 @@ function maozhongteSidebar() {
           ],
         },
 
-        // 第 2-8 章待建（笔记完成后逐步补入）
+        // 第二章（已建笔记）
+        {
+          text: '第二章 新民主主义革命理论',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/maozhongte/ch02/' },
+            { text: '第一节 新民主主义革命理论形成的依据', link: '/maozhongte/ch02/第一节-新民主主义革命理论形成的依据' },
+            { text: '第二节 新民主主义革命的总路线和基本纲领', link: '/maozhongte/ch02/第二节-新民主主义革命的总路线和基本纲领' },
+            { text: '第三节 新民主主义革命的道路和基本经验', link: '/maozhongte/ch02/第三节-新民主主义革命的道路和基本经验' },
+          ],
+        },
+
+        // 第 3-8 章待建（笔记完成后逐步补入）
       ],
     },
   ]
