@@ -207,7 +207,52 @@ function maozhongteSidebar() {
           ],
         },
 
-        // 第 5-8 章待建（笔记完成后逐步补入）
+        // 第五章（已建笔记）
+        {
+          text: '第五章 中国特色社会主义理论体系的形成发展',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/maozhongte/ch05/' },
+            { text: '第一节 中国特色社会主义理论体系形成发展的社会历史条件', link: '/maozhongte/ch05/第一节-中国特色社会主义理论体系形成发展的社会历史条件' },
+            { text: '第二节 中国特色社会主义理论体系形成发展过程', link: '/maozhongte/ch05/第二节-中国特色社会主义理论体系形成发展过程' },
+          ],
+        },
+
+        // 第六章（已建笔记）
+        {
+          text: '第六章 邓小平理论',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/maozhongte/ch06/' },
+            { text: '第一节 邓小平理论首要的基本的理论问题和精髓', link: '/maozhongte/ch06/第一节-邓小平理论首要的基本的理论问题和精髓' },
+            { text: '第二节 邓小平理论的主要内容', link: '/maozhongte/ch06/第二节-邓小平理论的主要内容' },
+            { text: '第三节 邓小平理论的历史地位', link: '/maozhongte/ch06/第三节-邓小平理论的历史地位' },
+          ],
+        },
+
+        // 第七章（已建笔记）
+        {
+          text: '第七章 "三个代表"重要思想',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/maozhongte/ch07/' },
+            { text: '第一节 "三个代表"重要思想的核心观点', link: '/maozhongte/ch07/第一节-三个代表重要思想的核心观点' },
+            { text: '第二节 "三个代表"重要思想的主要内容', link: '/maozhongte/ch07/第二节-三个代表重要思想的主要内容' },
+            { text: '第三节 "三个代表"重要思想的历史地位', link: '/maozhongte/ch07/第三节-三个代表重要思想的历史地位' },
+          ],
+        },
+
+        // 第八章（已建笔记）
+        {
+          text: '第八章 科学发展观',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/maozhongte/ch08/' },
+            { text: '第一节 科学发展观的科学内涵', link: '/maozhongte/ch08/第一节-科学发展观的科学内涵' },
+            { text: '第二节 科学发展观的主要内容', link: '/maozhongte/ch08/第二节-科学发展观的主要内容' },
+            { text: '第三节 科学发展观的历史地位', link: '/maozhongte/ch08/第三节-科学发展观的历史地位' },
+          ],
+        },
       ],
     },
   ]
