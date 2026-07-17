@@ -44,7 +44,7 @@ export default defineConfig({
     sidebar: {
       '/chinese/':    chineseSidebar(),
       '/xigai/':      xigaiSidebar(),
-      '/sixiu/':      sidebarGroup('sixiu'),
+      '/sixiu/':      sixiuSidebar(),
       '/mayuan/':     mayuanSidebar(),
       '/maozhongte/': maozhongteSidebar(),
       '/shigang/':    shigangSidebar(),
@@ -457,6 +457,104 @@ function mayuanSidebar() {
             { text: '第一节 展望未来共产主义新社会', link: '/mayuan/ch07/第一节-展望未来共产主义新社会' },
             { text: '第二节 实现共产主义是历史发展的必然趋势', link: '/mayuan/ch07/第二节-实现共产主义是历史发展的必然趋势' },
             { text: '第三节 共产主义远大理想与中国特色社会主义共同理想', link: '/mayuan/ch07/第三节-共产主义远大理想与中国特色社会主义共同理想' },
+          ],
+        },
+      ],
+    },
+  ]
+}
+
+// 思修（15042）按"章→节"两层嵌套的侧边栏
+function sixiuSidebar() {
+  return [
+    {
+      text: '🔴 15042 思修',
+      collapsed: false,
+      items: [
+        { text: '首页', link: '/sixiu/' },
+
+        // 绪论（已建笔记）
+        {
+          text: '绪论 担当复兴大任 成就时代新人',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/sixiu/ch00/' },
+            { text: '第一节 我们处在中国特色社会主义新时代', link: '/sixiu/ch00/第一节-我们处在中国特色社会主义新时代' },
+            { text: '第二节 新时代呼唤担当民族复兴大任的时代新人', link: '/sixiu/ch00/第二节-新时代呼唤担当民族复兴大任的时代新人' },
+            { text: '第三节 不断提升思想道德素质和法治素养', link: '/sixiu/ch00/第三节-不断提升思想道德素质和法治素养' },
+          ],
+        },
+
+        // 第一章（已建笔记）
+        {
+          text: '第一章 领悟人生真谛 把握人生方向',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/sixiu/ch01/' },
+            { text: '第一节 人生观是对人生的总看法', link: '/sixiu/ch01/第一节-人生观是对人生的总看法' },
+            { text: '第二节 正确的人生观', link: '/sixiu/ch01/第二节-正确的人生观' },
+            { text: '第三节 创造有意义的人生', link: '/sixiu/ch01/第三节-创造有意义的人生' },
+          ],
+        },
+
+        // 第二章（已建笔记）
+        {
+          text: '第二章 追求远大理想 坚定崇高信念',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/sixiu/ch02/' },
+            { text: '第一节 理想信念的内涵及重要性', link: '/sixiu/ch02/第一节-理想信念的内涵及重要性' },
+            { text: '第二节 坚定信仰信念信心', link: '/sixiu/ch02/第二节-坚定信仰信念信心' },
+            { text: '第三节 在实现中国梦的实践中放飞青春梦想', link: '/sixiu/ch02/第三节-在实现中国梦的实践中放飞青春梦想' },
+          ],
+        },
+
+        // 第三章（已建笔记）
+        {
+          text: '第三章 继承优良传统 弘扬中国精神',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/sixiu/ch03/' },
+            { text: '第一节 中国精神是兴国强国之魂', link: '/sixiu/ch03/第一节-中国精神是兴国强国之魂' },
+            { text: '第二节 做新时代的忠诚爱国者', link: '/sixiu/ch03/第二节-做新时代的忠诚爱国者' },
+            { text: '第三节 让改革创新成为青春远航的动力', link: '/sixiu/ch03/第三节-让改革创新成为青春远航的动力' },
+          ],
+        },
+
+        // 第四章（已建笔记）
+        {
+          text: '第四章 明确价值要求 践行价值准则',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/sixiu/ch04/' },
+            { text: '第一节 全体人民共同的价值追求', link: '/sixiu/ch04/第一节-全体人民共同的价值追求' },
+            { text: '第二节 社会主义核心价值观的显著特征', link: '/sixiu/ch04/第二节-社会主义核心价值观的显著特征' },
+            { text: '第三节 积极践行社会主义核心价值观', link: '/sixiu/ch04/第三节-积极践行社会主义核心价值观' },
+          ],
+        },
+
+        // 第五章（已建笔记）
+        {
+          text: '第五章 遵守道德规范 锤炼道德品格',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/sixiu/ch05/' },
+            { text: '第一节 社会主义道德的核心与原则', link: '/sixiu/ch05/第一节-社会主义道德的核心与原则' },
+            { text: '第二节 吸收借鉴优秀道德成果', link: '/sixiu/ch05/第二节-吸收借鉴优秀道德成果' },
+            { text: '第三节 投身崇德向善的道德实践', link: '/sixiu/ch05/第三节-投身崇德向善的道德实践' },
+          ],
+        },
+
+        // 第六章（已建笔记）
+        {
+          text: '第六章 学习法治思想 提升法治素养',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/sixiu/ch06/' },
+            { text: '第一节 社会主义法律的特征和运行', link: '/sixiu/ch06/第一节-社会主义法律的特征和运行' },
+            { text: '第二节 坚持全面依法治国', link: '/sixiu/ch06/第二节-坚持全面依法治国' },
+            { text: '第三节 维护宪法权威', link: '/sixiu/ch06/第三节-维护宪法权威' },
+            { text: '第四节 自觉尊法学法守法用法', link: '/sixiu/ch06/第四节-自觉尊法学法守法用法' },
           ],
         },
       ],
