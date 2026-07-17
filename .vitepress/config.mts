@@ -45,7 +45,7 @@ export default defineConfig({
       '/chinese/':    chineseSidebar(),
       '/xigai/':      xigaiSidebar(),
       '/sixiu/':      sidebarGroup('sixiu'),
-      '/mayuan/':     sidebarGroup('mayuan'),
+      '/mayuan/':     mayuanSidebar(),
       '/maozhongte/': maozhongteSidebar(),
       '/shigang/':    shigangSidebar(),
     },
@@ -173,6 +173,33 @@ function maozhongteSidebar() {
         },
 
         // 第 2-8 章待建（笔记完成后逐步补入）
+      ],
+    },
+  ]
+}
+
+// 马原（15044）按"章→节"两层嵌套的侧边栏
+function mayuanSidebar() {
+  return [
+    {
+      text: '🟡 15044 马原',
+      collapsed: false,
+      items: [
+        { text: '首页', link: '/mayuan/' },
+
+        // 第一章（已建笔记）
+        {
+          text: '第一章 世界的物质性及发展规律',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/mayuan/ch01/' },
+            { text: '第一节 世界的多样性与物质统一性', link: '/mayuan/ch01/第一节-世界的多样性与物质统一性' },
+            { text: '第二节 事物的普遍联系和变化发展', link: '/mayuan/ch01/第二节-事物的普遍联系和变化发展' },
+            { text: '第三节 唯物辩证法是认识世界和改造世界的根本方法', link: '/mayuan/ch01/第三节-唯物辩证法是认识世界和改造世界的根本方法' },
+          ],
+        },
+
+        // 第 2-7 章待建（笔记完成后逐步补入）
       ],
     },
   ]
