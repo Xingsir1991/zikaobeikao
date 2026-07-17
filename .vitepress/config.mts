@@ -47,7 +47,7 @@ export default defineConfig({
       '/sixiu/':      sidebarGroup('sixiu'),
       '/mayuan/':     sidebarGroup('mayuan'),
       '/maozhongte/': sidebarGroup('maozhongte'),
-      '/shigang/':    sidebarGroup('shigang'),
+      '/shigang/':    shigangSidebar(),
     },
 
     // 右侧大纲：展示 H2 / H3
@@ -119,6 +119,34 @@ function sidebarGroup(key: string) {
       text: `${s.icon} ${s.title}`,
       collapsed: false,
       items,
+    },
+  ]
+}
+
+// 史纲（15043）按"章→节"两层嵌套的侧边栏
+function shigangSidebar() {
+  return [
+    {
+      text: '🟢 15043 史纲',
+      collapsed: false,
+      items: [
+        { text: '首页', link: '/shigang/' },
+
+        // 第一章（已建笔记）
+        {
+          text: '第一章 进入近代后中华民族的磨难与抗争',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/shigang/ch01/' },
+            { text: '第一节 鸦片战争前后的中国与世界', link: '/shigang/ch01/第一节-鸦片战争前后的中国与世界' },
+            { text: '第二节 西方列强对中国的侵略', link: '/shigang/ch01/第二节-西方列强对中国的侵略' },
+            { text: '第三节 反抗外国武装侵略的斗争', link: '/shigang/ch01/第三节-反抗外国武装侵略的斗争' },
+            { text: '第四节 反侵略战争的失败与民族意识的觉醒', link: '/shigang/ch01/第四节-反侵略战争的失败与民族意识的觉醒' },
+          ],
+        },
+
+        // 第 2-10 章待建（笔记完成后逐步补入）
+      ],
     },
   ]
 }
