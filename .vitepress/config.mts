@@ -43,7 +43,7 @@ export default defineConfig({
     // 侧边栏：每个科目目录下独立展示该科目的内容
     sidebar: {
       '/chinese/':    chineseSidebar(),
-      '/xigai/':      sidebarGroup('xigai'),
+      '/xigai/':      xigaiSidebar(),
       '/sixiu/':      sidebarGroup('sixiu'),
       '/mayuan/':     sidebarGroup('mayuan'),
       '/maozhongte/': sidebarGroup('maozhongte'),
@@ -125,6 +125,34 @@ function sidebarGroup(key: string) {
 
 // 大学语文按文体分组的侧边栏
 // 新增文章时，归入对应文体分组即可
+
+// 习概（15040）按"章→节"两层嵌套的侧边栏
+// 新增章节时：在对应章分组内补一行叶子项即可
+function xigaiSidebar() {
+  return [
+    {
+      text: '🟣 15040 习概',
+      collapsed: false,
+      items: [
+        { text: '首页', link: '/xigai/' },
+
+        // 第一章（已建笔记）
+        {
+          text: '第一章 新时代坚持和发展中国特色社会主义',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/xigai/ch01/' },
+            { text: '第一节 方向决定道路，道路决定命运', link: '/xigai/ch01/第一节-方向决定道路道路决定命运' },
+            { text: '第二节 中国特色社会主义进入新时代', link: '/xigai/ch01/第二节-中国特色社会主义进入新时代' },
+            { text: '第三节 新时代坚持和发展中国特色社会主义要一以贯之', link: '/xigai/ch01/第三节-新时代坚持和发展中国特色社会主义要一以贯之' },
+          ],
+        },
+
+        // 第 2-17 章待建（笔记完成后逐步补入）
+      ],
+    },
+  ]
+}
 function chineseSidebar() {
   return [
     {

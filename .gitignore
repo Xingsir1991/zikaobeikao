@@ -24,3 +24,6 @@ jobs.json
 # PDF 教材原文件与拆分产物（体积过大，不入库）
 *.pdf
 pdf-parts/
+
+# OCR 中间产物（教材扫描识别文本，不入库）
+xigai/ocr-source/
