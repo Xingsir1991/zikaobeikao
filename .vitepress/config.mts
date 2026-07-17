@@ -279,7 +279,77 @@ function mayuanSidebar() {
           ],
         },
 
-        // 第 2-7 章待建（笔记完成后逐步补入）
+        // 第二章（已建笔记）
+        {
+          text: '第二章 实践与认识及其发展规律',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/mayuan/ch02/' },
+            { text: '第一节 实践与认识', link: '/mayuan/ch02/第一节-实践与认识' },
+            { text: '第二节 真理与价值', link: '/mayuan/ch02/第二节-真理与价值' },
+            { text: '第三节 认识世界和改造世界', link: '/mayuan/ch02/第三节-认识世界和改造世界' },
+          ],
+        },
+
+        // 第三章（已建笔记）
+        {
+          text: '第三章 人类社会及其发展规律',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/mayuan/ch03/' },
+            { text: '第一节 人类社会的存在与发展', link: '/mayuan/ch03/第一节-人类社会的存在与发展' },
+            { text: '第二节 社会历史发展的动力', link: '/mayuan/ch03/第二节-社会历史发展的动力' },
+            { text: '第三节 人民群众在历史发展中的作用', link: '/mayuan/ch03/第三节-人民群众在历史发展中的作用' },
+          ],
+        },
+
+        // 第四章（已建笔记）
+        {
+          text: '第四章 资本主义的本质及规律',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/mayuan/ch04/' },
+            { text: '第一节 商品经济和价值规律', link: '/mayuan/ch04/第一节-商品经济和价值规律' },
+            { text: '第二节 资本主义经济制度', link: '/mayuan/ch04/第二节-资本主义经济制度' },
+            { text: '第三节 资本主义上层建筑', link: '/mayuan/ch04/第三节-资本主义上层建筑' },
+          ],
+        },
+
+        // 第五章（已建笔记）
+        {
+          text: '第五章 资本主义的发展及其趋势',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/mayuan/ch05/' },
+            { text: '第一节 垄断资本主义的形成与发展', link: '/mayuan/ch05/第一节-垄断资本主义的形成与发展' },
+            { text: '第二节 正确认识当代资本主义的新变化', link: '/mayuan/ch05/第二节-正确认识当代资本主义的新变化' },
+            { text: '第三节 资本主义的历史地位和发展趋势', link: '/mayuan/ch05/第三节-资本主义的历史地位和发展趋势' },
+          ],
+        },
+
+        // 第六章（已建笔记）
+        {
+          text: '第六章 社会主义的发展及其规律',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/mayuan/ch06/' },
+            { text: '第一节 社会主义五百年的历史进程', link: '/mayuan/ch06/第一节-社会主义五百年的历史进程' },
+            { text: '第二节 科学社会主义基本原则', link: '/mayuan/ch06/第二节-科学社会主义基本原则' },
+            { text: '第三节 在实践中探索社会主义的发展规律', link: '/mayuan/ch06/第三节-在实践中探索社会主义的发展规律' },
+          ],
+        },
+
+        // 第七章（已建笔记）
+        {
+          text: '第七章 共产主义崇高理想及其最终实现',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/mayuan/ch07/' },
+            { text: '第一节 展望未来共产主义新社会', link: '/mayuan/ch07/第一节-展望未来共产主义新社会' },
+            { text: '第二节 实现共产主义是历史发展的必然趋势', link: '/mayuan/ch07/第二节-实现共产主义是历史发展的必然趋势' },
+            { text: '第三节 共产主义远大理想与中国特色社会主义共同理想', link: '/mayuan/ch07/第三节-共产主义远大理想与中国特色社会主义共同理想' },
+          ],
+        },
       ],
     },
   ]
