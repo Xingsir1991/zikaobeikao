@@ -184,7 +184,19 @@ function maozhongteSidebar() {
           ],
         },
 
-        // 第 3-8 章待建（笔记完成后逐步补入）
+        // 第三章（已建笔记）
+        {
+          text: '第三章 社会主义改造理论',
+          collapsed: false,
+          items: [
+            { text: '章节导读', link: '/maozhongte/ch03/' },
+            { text: '第一节 从新民主主义到社会主义的转变', link: '/maozhongte/ch03/第一节-从新民主主义到社会主义的转变' },
+            { text: '第二节 社会主义改造道路和历史经验', link: '/maozhongte/ch03/第二节-社会主义改造道路和历史经验' },
+            { text: '第三节 社会主义基本制度在中国的确立', link: '/maozhongte/ch03/第三节-社会主义基本制度在中国的确立' },
+          ],
+        },
+
+        // 第 4-8 章待建（笔记完成后逐步补入）
       ],
     },
   ]
